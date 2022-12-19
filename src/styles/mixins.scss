@@ -1,0 +1,34 @@
+@mixin transition () {
+  transition-timing-function: ease-in-out;
+  transition-duration: .1s;
+  transition-property: border-color, color, background-color, opacity, visibility, transform, box-shadow;
+}
+
+@mixin reset () {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin absoluteCenter () {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin navLinkEffects () {
+  &:focus-visible,
+  &:hover {
+    opacity: .7;
+  }
+  &:active {
+    color: var(--color-red);
+  }
+}

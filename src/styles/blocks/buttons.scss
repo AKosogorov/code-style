@@ -1,0 +1,94 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: var(--color-white);
+
+  &:focus-visible,
+  &:hover {
+    color: var(--color-white);
+  }
+  &:active {
+    color: var(--color-white);
+    scale: .95;
+  }
+  &:disabled {
+    border-color: var(--color-blue);
+    background-color: var(--color-blue--light);
+  }
+
+  &--green {
+    border-color: var(--color-green);
+    color: var(--color-green);
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      background-color: var(--color-green--light);
+    }
+  }
+  &--red {
+    border-color: var(--color-red);
+    color: var(--color-red);
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      background-color: var(--color-red--light);
+    }
+  }
+  &--yellow {
+    border-color: var(--color-yellow);
+    color: var(--color-yellow);
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      background-color: var(--color-yellow--light);
+    }
+  }
+}
+
+.btn-cross {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 2px;
+    background: var(--color-white);
+  }
+
+  &::before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:focus-visible::before,
+  &:focus-visible::after,
+  &:hover::before,
+  &:hover::after {
+    background: var(--color-green);
+  }
+
+  &:active::before,
+  &:active::after {
+    background: var(--color-red);
+  }
+
+  &--modal {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -1,0 +1,55 @@
+.button-scroll-up {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  z-index: 1;
+  gap: 5px;
+  border: 1px solid var(--color-blue);
+  border-radius: 100%;
+  min-width: initial;
+  width: 80px;
+  height: 80px;
+  color: var(--color-green);
+  background: transparent;
+
+  .arrow {
+    transform: rotate(-90deg);
+  }
+
+  &:focus-visible,
+  &:hover {
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+  }
+
+  &:active {
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+  }
+
+  &:focus-visible,
+  &:hover,
+  &:active {
+    .arrow:nth-child(1) {
+      animation: arrowUp .9s ease-in-out infinite;
+    }
+    .arrow:nth-child(2) {
+      animation: arrowUp .9s ease-in-out infinite .1s;
+    }
+    .arrow:nth-child(3) {
+      animation: arrowUp .9s ease-in-out infinite .2s;
+    }
+  }
+}
+
+@keyframes arrowUp {
+  0% {
+    transform: rotate(-90deg) translateX(0);
+  }
+  50% {
+    transform: rotate(-90deg) translateX(15px);
+  }
+  100% {
+    transform: rotate(-90deg) translateX(0);
+  }
+}
