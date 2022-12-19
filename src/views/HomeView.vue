@@ -9,8 +9,25 @@
       </p>
 
       <p class="fsz20 mb-20">
-        Все рекомендации сделаны на примере <span class="green">Vue.js,</span> но подойдут и для других сред разработки.
+        Все рекомендации сделаны на примере
+        <a
+          class="link green"
+          href="https://v3.ru.vuejs.org/"
+          target="_blank"
+        >
+          Vue.js,
+        </a>
+
+        но подойдут и для других сред разработки.
       </p>
+
+      <a
+        class="link green"
+        href="https://v3.ru.vuejs.org/ru/style-guide/"
+        target="_blank"
+      >
+        Официальные рекомендации Vue.js
+      </a>
     </div>
   </section>
 </template>

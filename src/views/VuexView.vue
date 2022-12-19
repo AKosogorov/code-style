@@ -3,7 +3,14 @@
     <div class="container column gap-60">
       <div class="column gap-30">
         <h1>
-          VUEX - стэйт менеджер
+          <a
+            class="link green"
+            href="https://vuex.vuejs.org/"
+            target="_blank"
+          >
+            VUEX
+          </a>
+          - стэйт менеджер
           <span class="green">Vue.js</span>
         </h1>
 

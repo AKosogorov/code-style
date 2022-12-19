@@ -46,7 +46,14 @@
         <p>
           При использовании компонентов в верстке, окружающие теги могут дублируются.
           В таком случае можно создать новый компонент, который будет содержать в себе
-          верстку + компонент. Во <b class="green">Vue.js</b> с этим могут помочь слоты.
+          верстку + компонент. Во <b class="green">Vue.js</b> с этим могут помочь
+          <a
+            class="link green"
+            href="https://v3.ru.vuejs.org/ru/guide/component-slots.html"
+            target="_blank"
+          >
+            Slots
+          </a>
         </p>
 
         <ImageLabel
@@ -62,7 +69,15 @@
         <p>
           Бывает что у разных компонентов, есть одинаковая логика и пропсы.
           Чтобы решить этот вопрос можно вынести общий код в отдельные функции
-          и импортировать в компонент. Во <b class="green">Vue.js</b> с этим могут помочь mixins.
+          и импортировать в компонент. Во <b class="green">Vue.js</b> с этим могут помочь
+
+          <a
+            class="link green"
+            href="https://v3.ru.vuejs.org/ru/guide/mixins.html"
+            target="_blank"
+          >
+            Mixins
+          </a>
         </p>
 
         <ImageLabel
